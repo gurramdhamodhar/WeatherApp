@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let weatherIcon = document.getElementById("weatherIcon");
     let errorText = document.getElementById("errorText");
 
-    let API_KEY = "e03461c0b1595544ede7b1e6469d06b7";
+    let API_KEY = ""; // use your own api key
 
     fetchDataBtn.addEventListener("click", async() =>{
         let city = inputData.value.trim();
