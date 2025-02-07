@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="min.style.css">
+    <link rel="shortcut icon" href="images/sun.png" type="image/x-icon">
+    <script src="index.js" defer></script>
+    <title>Weather App</title>
+</head>
+<body class="bg-slate-700 flex justify-center items-center h-screen overflow-hidden">
+    <div class="w-96 h-96 bg-[#aeaaf6] rounded-md shadow-slate-50 py-6 fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+        <h1 class="text-center text-white text-xl font-semibold px-4 py-2 mb-4">Weather App</h1>
+        <div class="flex justify-center items-center gap-2">
+            <input type="text" id="inputData" class=" py-2 w-56 rounded-md pl-2 border-2 border-[#8b7cdb]" placeholder="Enter City Name">
+            <button id="fetchDataBtn" class="py-2 px-4 bg-[#5a46a7] text-white rounded-md font-semibold border-[white] border-2 hover:bg-[#361D61]">Search</button>
+        </div>
+        <div class="w-80 h-52 bg-white mx-auto my-4 rounded-md border-2 border-[#8b7cdb] p-6">
+            <div id="weatherDetailsDiv" class="flex-col flex justify-center items-center">
+               <div class="flex justify-center items-center">
+                    <h3 id="cityName" class="text-center font-bold text-base py-2 px-2 text-violet-600"></h3>
+                    <img src="" alt="" id="weatherIcon" class="weatherIcon rounded-full mt-2 w-7 h-7 hidden mb-2">
+               </div>
+                <div class="py-4 self-start">
+                    <p id="cityTemp" class="text-sm font-semibold mb-4"></p>
+                    <p id="description" class="text-sm font-semibold"></p>
+                </div>
+            </div>
+            <p id="errorText" class="text-red-500 text-center font-semibold hidden">City not found</p>
+        </div>
+    </div>
+    
+</body>
+</html>
